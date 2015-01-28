@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-01-29T01:55:35+08:00</updated>
+  <updated>2015-01-29T01:59:43+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -43,11 +43,13 @@ cd [資料夾名稱]
 bundle install
 </code></p>
 
-<p>安裝預設主題，
+<p>安裝預設主題
 <code>
 rake install
 </code>
 到這邊已安裝好 Octopress</p>
+
+<h3>GitHub 頁面設定</h3>
 
 <p>接下來要做 GitHub 頁面的設定
 <code>
