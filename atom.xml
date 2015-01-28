@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-01-29T01:59:43+08:00</updated>
+  <updated>2015-01-29T02:25:07+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bash Shortcut]]></title>
+    <link href="http://hazetodo.github.io/blog/2015/01/02/bash-shortcut/"/>
+    <updated>2015-01-02T02:15:30+08:00</updated>
+    <id>http://hazetodo.github.io/blog/2015/01/02/bash-shortcut</id>
+    <content type="html"><![CDATA[<h3>lazy 快捷鍵</h3>
+
+<ul>
+<li><code>ctrl</code> + <code>a</code>: 將游標移到開頭</li>
+<li><code>ctrl</code> + <code>e</code>: 將游標移到結尾</li>
+<li><code>ctrl</code> + <code>k</code>: 刪除游標後面的所有字元</li>
+<li><code>ctrl</code> + <code>u</code>: 刪除游標前面的所有字元</li>
+<li><code>ctrl</code> + <code>w</code>: 刪除游標前面的所有字元</li>
+<li><code>ctrl</code> + <code>t</code>: 將游標前的兩個字母對調</li>
+<li><code>ctrl</code> + <code>c</code>: 中斷執行</li>
+<li><code>cmd</code> + <code>t</code>: 開一個新的頁籤</li>
+<li><code>cmd</code> + <code>n</code>: 開一個新 bash</li>
+<li><code>tab</code>: 自動完成檔案或目錄名稱</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress in Github]]></title>
