@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
+  <link href="http://hazetodo.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://hazetodo.github.io/"/>
+  <updated>2015-01-29T01:55:35+08:00</updated>
+  <id>http://hazetodo.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress in Github]]></title>
+    <link href="http://hazetodo.github.io/blog/2015/01/01/octopress-in-github/"/>
+    <updated>2015-01-01T01:25:50+08:00</updated>
+    <id>http://hazetodo.github.io/blog/2015/01/01/octopress-in-github</id>
+    <content type="html"><![CDATA[<p><a href="http://octopress.org/">Octopress</a> 是一個很棒的 Blog 框架，我們可以很簡單把它放在 GitHub 上。</p>
+
+<h3>在 GitHub 上建立網頁伺服器</h3>
+
+<p>GitHub 有免費的靜態網頁伺服器可供使用，不過必須照它的規則來走。首先要去建立一個新的 repository，並命名為 xxxxx.github.io。
+例如我的帳號為 hazetodo，那麼 repository name 就是 hazetodo.github.io
+建立完成會有個 URL 為 <a href="https://github.com/hazetodo/hazetodo.github.io">https://github.com/hazetodo/hazetodo.github.io</a></p>
+
+<h3>安裝 Octopress</h3>
+
+<p>打開終端機，將 Octopress 的 <a href="https://github.com/imathis/octopress">repository</a> 複製一份到本地端，並指定希望的資料夾名稱。
+<code>
+git clone git://github.com/imathis/octopress.git [資料夾名稱]
+</code></p>
+
+<p>然後進入剛建好的這個資料夾
+<code>
+cd [資料夾名稱]
+</code></p>
+
+<p>安裝相關套件
+<code>
+bundle install
+</code></p>
+
+<p>安裝預設主題，
+<code>
+rake install
+</code>
+到這邊已安裝好 Octopress</p>
+
+<p>接下來要做 GitHub 頁面的設定
+<code>
+rake setup_github_pages
+</code>
+<code>setup_github_pages</code> 將會請你輸入 GitHub repository 的 URL 來設定 GitHub pages。
+像我就是 <a href="https://github.com/hazetodo/hazetodo.github.io">https://github.com/hazetodo/hazetodo.github.io</a></p>
+
+<p>再來執行下面指令來產生部落格檔案
+<code>
+rake generate
+</code></p>
+
+<p>接著 deploy 檔案到 GitHub pages
+<code>
+rake deploy
+</code></p>
+
+<p>最後，將 source 也 push 到 GitHub repository。
+<code>
+git add .
+git commit -m "你的訊息"
+git push origin source
+</code>
+如果一切順利，你現在已經有了自己的部落格，而對應網址是 [使用者帳號].github.io。</p>
+
+<h3>新增文章</h3>
+
+<p>我們可以使用 <code>new_post</code> 來新增文章，這指令將會在 source/_posts/ 下面產生對應的檔案。
+<code>
+rake new_post["title"]
+</code>
+由於上面的 title 會被用來做為文章的檔案名稱，所以建議使用英文。</p>
+
+<p>若打開每篇文章的內容會看到最上方會有一些設定資訊如下</p>
+
+<pre><code>---
+layout: post 
+title: "Octopress GitHub"                 # 標題
+date: 2015-01-01 01:01:01 +0800           # 時間
+comments: true                            # 是否開啟評論?
+published: true                           # 是否發佈? 若否，將視為草稿不公開
+categories: octopress                     # 文章所屬類別
+---
+</code></pre>
+
+<p>我們將內容編寫於設定資訊的下方，而撰寫格式則是採用 <a href="http://markdown.tw/">Markdown</a> 語法。</p>
+
+<p>當撰寫文章時，我們可以新開一個終端機視窗並在專案資料夾下執行 <code>rake preview</code>，然後開啟瀏覽器連到 <a href="http://localhost:4000">http://localhost:4000</a> 進行預覽。
+<code>
+rake preview
+</code></p>
+
+<p>當編輯完新文章後，執行 <code>rake generate</code> 產生部落格檔案，然後再將它們 deploy 到 GitHub pages
+<code>
+rake generate
+rake deploy
+</code></p>
+
+<p>最後，別忘了 push 對應的 source 到你的 GitHub repository!</p>
+]]></content>
+  </entry>
+  
+</feed>
