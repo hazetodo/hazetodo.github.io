@@ -103,5 +103,4 @@ rake generate
 rake deploy
 ```
 
-最後，別忘了 push 對應的 source 到你的 GitHub repository!
-
+這樣的動作其實就是 push 到 hazetodo.github.io 這個 repository 去了. 記得要先 rake generate 再 rake deploy. 如果光光只有 rake deploy 是不行的.
