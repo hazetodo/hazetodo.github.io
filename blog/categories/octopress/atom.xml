@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-01-29T02:25:07+08:00</updated>
+  <updated>2015-02-15T02:04:35+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -31,7 +31,8 @@
 <p>打開終端機，將 Octopress 的 <a href="https://github.com/imathis/octopress">repository</a> 複製一份到本地端，並指定希望的資料夾名稱。
 <code>
 git clone git://github.com/imathis/octopress.git [資料夾名稱]
-</code></p>
+</code>
+p.s.: samy</p>
 
 <p>然後進入剛建好的這個資料夾
 <code>

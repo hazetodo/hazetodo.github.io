@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-01-29T02:25:07+08:00</updated>
+  <updated>2015-02-15T02:04:35+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -56,6 +56,8 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git [資料夾名稱]</span></code></pre></td></tr></table></div></figure>
 
+
+<p>p.s.: samy</p>
 
 <p>然後進入剛建好的這個資料夾</p>
 
