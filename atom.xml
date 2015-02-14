@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-02-15T02:04:35+08:00</updated>
+  <updated>2015-02-15T02:09:31+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -160,7 +160,7 @@
 </span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
 
 
-<p>最後，別忘了 push 對應的 source 到你的 GitHub repository!</p>
+<p>這樣的動作其實就是 push 到 hazetodo.github.io 這個 repository 去了. 記得要先 rake generate 再 rake deploy. 如果光光只有 rake deploy 是不行的.</p>
 ]]></content>
   </entry>
   
