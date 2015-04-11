@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Javascript | My Octopress Blog]]></title>
+  <link href="http://hazetodo.github.io/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://hazetodo.github.io/"/>
+  <updated>2015-04-12T04:41:31+08:00</updated>
+  <id>http://hazetodo.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Component Add Event Listener]]></title>
+    <link href="http://hazetodo.github.io/blog/2015/04/12/component-add-event-listener/"/>
+    <updated>2015-04-12T04:36:53+08:00</updated>
+    <id>http://hazetodo.github.io/blog/2015/04/12/component-add-event-listener</id>
+    <content type="html"><![CDATA[<h2>元件監聽</h2>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  Name: &lt;input type="text" id="txtInput"/&gt; &lt;br&gt;
+  Hello, &lt;span id="lblName"&gt;&lt;/span&gt;
+
+  &lt;script&gt;
+    var txtInput = document.getElementById('txtInput');
+    var lblName = document.getElementById('lblName');
+
+    txtInput.addEventListener('keyup', function(){
+      lblName.innerHTML = txtInput.value;
+    });
+
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

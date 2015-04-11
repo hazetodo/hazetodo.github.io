@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-02-15T02:12:42+08:00</updated>
+  <updated>2015-04-12T04:41:31+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Component Add Event Listener]]></title>
+    <link href="http://hazetodo.github.io/blog/2015/04/12/component-add-event-listener/"/>
+    <updated>2015-04-12T04:36:53+08:00</updated>
+    <id>http://hazetodo.github.io/blog/2015/04/12/component-add-event-listener</id>
+    <content type="html"><![CDATA[<h2>元件監聽</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;html&gt;
+</span><span class='line'>&lt;head&gt;
+</span><span class='line'>  &lt;title&gt;&lt;/title&gt;
+</span><span class='line'>&lt;/head&gt;
+</span><span class='line'>&lt;body&gt;
+</span><span class='line'>  
+</span><span class='line'>  Name: &lt;input type="text" id="txtInput"/&gt; &lt;br&gt;
+</span><span class='line'>  Hello, &lt;span id="lblName"&gt;&lt;/span&gt;
+</span><span class='line'>
+</span><span class='line'>  &lt;script&gt;
+</span><span class='line'>    var txtInput = document.getElementById('txtInput');
+</span><span class='line'>    var lblName = document.getElementById('lblName');
+</span><span class='line'>
+</span><span class='line'>    txtInput.addEventListener('keyup', function(){
+</span><span class='line'>      lblName.innerHTML = txtInput.value;
+</span><span class='line'>    });
+</span><span class='line'>
+</span><span class='line'>  &lt;/script&gt;
+</span><span class='line'>&lt;/body&gt;
+</span><span class='line'>&lt;/html&gt;</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bash Shortcut]]></title>

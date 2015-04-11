@@ -9,13 +9,30 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="lazy 快捷鍵 ctrl + a: 將游標移到開頭
-ctrl + e: 將游標移到結尾
-ctrl + k: 刪除游標後面的所有字元
-ctrl + u: 刪除游標前面的所有字元
-ctrl + w: 刪除游標前面的所有字元
-ctrl + t: 將游標前的兩個字母對調
-ctrl + c: 中斷執行 &hellip;">
+  <meta name="description" content="元件監聽 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+&lt;html&gt;
+&lt;head&gt; &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt; Name: &lt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +88,77 @@ ctrl + c: 中斷執行 &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/04/12/component-add-event-listener/">Component Add Event Listener</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-12T04:36:53+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:36 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>元件監聽</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;html&gt;
+</span><span class='line'>&lt;head&gt;
+</span><span class='line'>  &lt;title&gt;&lt;/title&gt;
+</span><span class='line'>&lt;/head&gt;
+</span><span class='line'>&lt;body&gt;
+</span><span class='line'>  
+</span><span class='line'>  Name: &lt;input type="text" id="txtInput"/&gt; &lt;br&gt;
+</span><span class='line'>  Hello, &lt;span id="lblName"&gt;&lt;/span&gt;
+</span><span class='line'>
+</span><span class='line'>  &lt;script&gt;
+</span><span class='line'>    var txtInput = document.getElementById('txtInput');
+</span><span class='line'>    var lblName = document.getElementById('lblName');
+</span><span class='line'>
+</span><span class='line'>    txtInput.addEventListener('keyup', function(){
+</span><span class='line'>      lblName.innerHTML = txtInput.value;
+</span><span class='line'>    });
+</span><span class='line'>
+</span><span class='line'>  &lt;/script&gt;
+</span><span class='line'>&lt;/body&gt;
+</span><span class='line'>&lt;/html&gt;</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -274,6 +362,10 @@ ctrl + c: 中斷執行 &hellip;">
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/04/12/component-add-event-listener/">Component Add Event Listener</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2015/01/02/bash-shortcut/">Bash Shortcut</a>
