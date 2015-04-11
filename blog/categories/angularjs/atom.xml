@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Angularjs | My Octopress Blog]]></title>
+  <link href="http://hazetodo.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
+  <link href="http://hazetodo.github.io/"/>
+  <updated>2015-04-12T06:14:54+08:00</updated>
+  <id>http://hazetodo.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[AngularJS]]></title>
+    <link href="http://hazetodo.github.io/blog/2015/04/12/angularjs-ng-app-and-ng-model/"/>
+    <updated>2015-04-12T06:03:57+08:00</updated>
+    <id>http://hazetodo.github.io/blog/2015/04/12/angularjs-ng-app-and-ng-model</id>
+    <content type="html"><![CDATA[<ul>
+<li>ng-app</li>
+<li>ng-model</li>
+</ul>
+
+
+<pre><code>&lt;html ng-app&gt;
+&lt;head&gt;
+  &lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Name: &lt;input ng-model="txtInput" type="text"/&gt; &lt;br&gt;
+  Hello, 
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
