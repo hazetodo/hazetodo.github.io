@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Angularjs | My Octopress Blog]]></title>
   <link href="http://hazetodo.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
   <link href="http://hazetodo.github.io/"/>
-  <updated>2015-04-16T19:06:28+08:00</updated>
+  <updated>2015-04-18T12:57:37+08:00</updated>
   <id>http://hazetodo.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -27,7 +27,16 @@ ng-controller 原本的寫法會 run 不起來</p>
 
 <p>&#8220;`
 <html ng-app='myApp'>
-<head></p>
+<head>
+  <title></title>
+</head>
+<body>
+  <div ng-controller="MainCtrl">
+    <div>
+      <span ng-bind="greeting"></span>
+      <span ng-bind="person"></span>
+    </div>
+  </div></p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
 
@@ -35,24 +44,19 @@ ng-controller 原本的寫法會 run 不起來</p>
 <script src="./app.js"></script>
 
 
-<p></head>
-<body>
-  <div ng-controller="MainCtrl">
-    <div>
-        !
-    </div>
-  </div>
-</body>
+<p></body>
 </html>
 &#8220;`</p>
 
-<pre><code>var myApp = angular.module('myApp', []);
+<p>app.js
+&#8220;`
+var myApp = angular.module(&lsquo;myApp&rsquo;, []);</p>
 
-myApp.controller('MainCtrl', function ($scope) {
-  $scope.greeting="Hello";
-  $scope.person="Kitty";
+<p>myApp.controller(&lsquo;MainCtrl&rsquo;, function ($scope) {
+  $scope.greeting=&ldquo;Hello&rdquo;;
+  $scope.person=&ldquo;Kitty&rdquo;;
 });
-</code></pre>
+&#8220;`</p>
 ]]></content>
   </entry>
   
@@ -77,7 +81,7 @@ myApp.controller('MainCtrl', function ($scope) {
 &lt;/head&gt;
 &lt;body&gt;
   Name: &lt;input ng-model="txtInput" type="text"/&gt; &lt;br&gt;
-  Hello, 
+  Hello, {{txtInput}}
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
